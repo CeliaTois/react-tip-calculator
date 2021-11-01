@@ -1,0 +1,88 @@
+#calculator {
+  background: white;
+  border-radius: 30px 30px 0 0;
+  padding: 35px 32px;
+  @include tablets {
+    padding: 35px 150px 45px;
+  }
+  @include desktops {
+    display: flex;
+    justify-content: space-between;
+    max-width: 840px;
+    border-radius: 30px;
+    margin: auto;
+    padding: 32px 32px 32px 50px;
+  }
+  & .calculator {
+    @include desktops {
+      width: 45%;
+    }
+  }
+  & h2 {
+    margin: 0 0 7px;
+    @include desktops {
+      margin-top: 13px;
+    }
+  }
+  & .icon {
+    position: relative;
+    top: 17px;
+    left: 20px;
+  }
+  & input {
+    @include inputs;
+    &[type="number"] {
+      -moz-appearance: textfield; // remove the arrows to increase or decrease number
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none; // remove the arrows to increase or decrease number
+    }
+    &:focus {
+      outline: none;
+      border: 2px solid $active-clr;
+    }
+    &:invalid {
+      border: 2px solid hsl(11, 80%, 60%);
+    }
+  }
+  & .input {
+    margin-top: -20px;
+    margin-bottom: 34px;
+    border: none;
+    width: 100%;
+    text-align: right;
+    background-color: $input-bg;
+    box-sizing: border-box; // define how total height and width are calculated
+    width: 100%;
+    padding-right: 17px;
+    height: 45px;
+    cursor: pointer;
+    @include desktops {
+      margin-bottom: 30px;
+    }
+  }
+  &__form #inputPeople {
+    @include desktops {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+span {
+  font-size: 0.95rem;
+  position: absolute;
+  right: 33px;
+  top: 531px;
+  color: hsl(11, 80%, 60%);
+  //display: none;
+  @include tablets {
+    right: 152px;
+    top: 625px;
+  }
+  @include desktops {
+    position: relative;
+    top: -92px;
+    right: -254px;
+  }
+}

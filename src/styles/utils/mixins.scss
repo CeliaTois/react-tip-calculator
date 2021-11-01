@@ -1,0 +1,26 @@
+@mixin inputs {
+  border-radius: 5px;
+  font-size: 1.5rem;
+  font-family: SpaceMono-Bold;
+  &::placeholder {
+    color: $placeholder-clr;
+  }
+}
+
+@mixin tablets {
+  @media (min-width: 768px) and (max-width: 991px) {
+    @content;
+  }
+}
+
+@mixin desktops {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+@mixin small-desktops {
+  @media (min-width: 992px) and (max-width: 1199px) {
+    @content;
+  }
+}

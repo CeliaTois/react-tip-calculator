@@ -1,0 +1,41 @@
+#calculator__total {
+  background-color: $darker-color;
+  border-radius: 15px;
+  padding: 20px;
+  @include desktops {
+    box-sizing: border-box;
+    padding: 20px 40px;
+  }
+}
+
+.calculator {
+  &__sections {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 21px;
+    @include desktops {
+      margin-bottom: 35px;
+    }
+    &__title {
+      & h2 {
+        color: white;
+        margin-bottom: 2px;
+      }
+      & p {
+        margin: 0;
+        font-size: 0.8rem;
+        color: $placeholder-clr;
+      }
+    }
+    &__amount {
+      & p {
+        color: $reset-clr;
+        font-size: 2rem;
+        margin: 0;
+        @include desktops {
+          font-size: 2.7rem;
+        }
+      }
+    }
+  }
+}

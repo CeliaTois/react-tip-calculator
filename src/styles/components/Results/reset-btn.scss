@@ -1,0 +1,19 @@
+#reset-btn {
+  background-color: $reset-clr;
+  width: 100%;
+  font-family: SpaceMono-Bold;
+  color: $darker-color;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  padding: 9px 0;
+  margin-top: 27px;
+  cursor: pointer;
+  @include desktops {
+    position: relative;
+    top: 63px;
+  }
+  &:active {
+    background-color: $active-clr;
+  }
+}

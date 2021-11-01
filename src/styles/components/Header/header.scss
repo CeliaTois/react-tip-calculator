@@ -1,0 +1,10 @@
+header {
+  text-align: center;
+  padding: 50px 0 36px;
+  @include tablets {
+    padding: 110px 0 70px;
+  }
+  @include desktops {
+    padding: 165px 0 82px;
+  }
+}

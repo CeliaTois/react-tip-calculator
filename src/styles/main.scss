@@ -1,0 +1,17 @@
+@import "./utils/variables.scss";
+
+@import "./utils/mixins.scss";
+
+@import "./base/base.scss";
+
+@import "./base/typography.scss";
+
+@import "./components/Header/header.scss";
+
+@import "./components/Calculator/calculator.scss";
+
+@import "./components/Calculator/tip.scss";
+
+@import "./components/Results/results.scss";
+
+@import "./components/Results/reset-btn.scss";
